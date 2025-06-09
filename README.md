@@ -24,6 +24,22 @@ TurfSpot is a comprehensive turf booking application with three modules: Admin, 
 - **Turf Management**: Admins can view all turfs listed by owners and manage them as necessary.
 - **Transaction Overview**: Admins have access to all transactions on the platform and can view transaction data on a monthly basis in graph format.
 
+---
+
+## 🌐 URLs
+
+- **User App**: [https://turf-spot.vercel.app/](https://turf-spot.vercel.app/)
+- **Owner/Admin App**: [https://turf-spot-ao.vercel.app/](https://turf-spot-ao.vercel.app/)
+
+### 🔐 Admin Credentials (For Demo)
+
+- **Email**: `admin@gmail.com`  
+- **Password**: `rijo.com`
+
+> 🛠️ **Note**: Admin accounts are created directly in the database. The admin process involves adding an owner manually in the `owners` table and updating their `role` to `admin`.
+
+---
+
 ## Technologies Used
 
 - **Frontend**: React, Tailwind CSS, DaisyUI, Redux
