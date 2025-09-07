@@ -52,7 +52,7 @@ export const getDashboardData = async (req, res) => {
       ]),
     ]);
 
-   const  rijobookingsPerTurf =  await Booking.aggregate([
+   const  ShrutbookingsPerTurf =  await Booking.aggregate([
       { $match: { turf: { $in: turfIds } } },
       { $group: { _id: "$turf", bookings: { $sum: 1 } } },
       {
@@ -66,7 +66,7 @@ export const getDashboardData = async (req, res) => {
       { $unwind: "$turfInfo" },
       { $project: { name: "$turfInfo.name", bookings: 1 } },
     ]);
-      console.log(rijobookingsPerTurf, "rijobookingsPerTurf");
+      console.log(ShrutbookingsPerTurf, "ShrutbookingsPerTurf");
     res.json({
       totalBookings,
       totalReviews,
